@@ -46,6 +46,7 @@ public class View {
                 table.addCell(user.getUserUuid(), cellStyle);
                 table.addCell(user.getUserName(), cellStyle);
                 table.addCell(user.getUserEmail(), cellStyle);
+                table.addCell(user.getUserPassword(),cellStyle);
                 table.addCell(String.valueOf(user.getIsDeleted()), cellStyle);
                 table.addCell(String.valueOf(user.getIsVerified()), cellStyle);
             }

@@ -81,11 +81,11 @@ public class UserRepository {
                 PreparedStatement preparedStatement = connectionDatabase().prepareStatement(SQLUtils.insertNewPerson);
 
         ) {
-          preparedStatement.setString(1, user.getUserName());
-            preparedStatement.setString(2, user.getUserUuid());
-          preparedStatement.setString(3,user.getUserEmail());
-          preparedStatement.setBoolean(4,user.getIsDeleted());
-                  preparedStatement.setString(5,user.getUserPassword());
+            preparedStatement.setString(1, user.getUserUuid());
+            preparedStatement.setString(2, user.getUserName());
+            preparedStatement.setString(3,user.getUserEmail());
+            preparedStatement.setString(5,user.getUserPassword());
+            preparedStatement.setBoolean(4,user.getIsDeleted());
             preparedStatement.setBoolean(6,user.getIsVerified());
 
 
